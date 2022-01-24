@@ -1,0 +1,3 @@
+# ignore json files, except for monday.json i guess :him:
+*.json !monday.json
+__pycache__
