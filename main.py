@@ -39,11 +39,10 @@ def loop():
     mainResponseObject = openJson("monday.json")
     print(f"Starting Autozoom for 10 slots of links.")
     for i in range(10):
-        print(i)
         # get time from current slot
-        slotTime = mainResponseObject[i]["time"]
-        slotLink = mainResponseObject[i]["link"]
-        slotTitle = mainResponseObject[i]["title"]
+        slotTime = mainResponseObject[f"{i}"]["time"]
+        slotLink = mainResponseObject[f"{i}"]["link"]
+        slotTitle = mainResponseObject[f"{i}"]["title"]
         # start loop
         running = True
         while running:
@@ -65,7 +64,8 @@ def main():
             loop()
         except KeyboardInterrupt or Exception as e:
             if KeyboardInterrupt:
-                print("\Exit")
+                print("\nExit")
+                mainRunning = False
             else:
                 print(e)
 
