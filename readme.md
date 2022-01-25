@@ -5,6 +5,7 @@ A project I made that automatically opens links based on a loaded JSON file.
 ## Software  
 - Git
 - Python 3 (doesn't work on 2, formatted strings etc etc)  
+- PHP (any version with JSON support will do)  
 
 ## Pip  
 See requirements.txt. Install with `python3 -m pip install -r requirements.txt`  
