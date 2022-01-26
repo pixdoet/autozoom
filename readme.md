@@ -14,6 +14,7 @@ See requirements.txt. Install with `python3 -m pip install -r requirements.txt`
 Clone the repo `git clone https://github.com/pixdoet/autozoom.git` into a local folder. Inside the folder, modify and run `php generator.php` to generate the JSON file, then run `python3 main.py` to start the main file. NOTE: You only need to run generator.php once unless you change your timetable.
 
 # To Do  
+- **PRIORITY AND MOST UPMOST UPMOST EXTERMELY IMPORTANT** Fix CPU overheating when running script over 30 seconds.  
 - Rework `generator.php` into Python  
 - Write better documentation.  
 - Write a GUI for creating timetables.  
